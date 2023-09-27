@@ -1,0 +1,47 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap";
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$black: #292F36;
+$grey: #6E889830;
+$white: #EEE5E9;
+
+* {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    @include flex;
+
+    background: $black;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+#board {
+    aspect-ratio: 1;
+    height: 75vh;
+
+    div {
+        @include flex;
+    }
+
+    p {
+        @include flex;
+        color: $grey;
+        text-align: center;
+        transition: color 3s;
+
+        &:hover {
+            color: $white;
+            transition: color 0.2s;
+        }
+    }
+}

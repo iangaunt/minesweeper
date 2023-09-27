@@ -1,0 +1,38 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap";
+* {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #292F36;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+#board {
+  aspect-ratio: 1;
+  height: 75vh;
+}
+#board div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#board p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(110, 136, 152, 0.1882352941);
+  text-align: center;
+  transition: color 3s;
+}
+#board p:hover {
+  color: #EEE5E9;
+  transition: color 0.2s;
+}/*# sourceMappingURL=style.css.map */
